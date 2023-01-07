@@ -14,9 +14,10 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-shadow: 1px 0 0 #100, 0 -1px 0 #100, 0 1px 0 #000, -1px 0 0 #000;
 }
 
+/*
 body::before {
   content: "";
   position: fixed;
@@ -28,6 +29,20 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
+*/
+
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("../img/plane.jpg") center no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+
 
 @media (min-width: 1024px) {
   body::before {
@@ -72,7 +87,7 @@ h6 {
 }
 
 #header h1 {
-  font-size: 48px;
+  font-size: 45px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -88,9 +103,11 @@ h6 {
 }
 
 #header h2 {
-  font-size: 24px;
-  margin-top: 20px;
+  font-size: 22px;
+  margin-top: 10px;
   color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
 }
 
 #header h2 span {
@@ -114,7 +131,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
   color: #fff;
   line-height: 1;
   margin-right: 8px;
@@ -195,7 +212,7 @@ h6 {
 */
 .navbar {
   padding: 0;
-  margin-top: 35px;
+  margin-top: 21px;
 }
 
 .navbar ul {
@@ -267,7 +284,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #fff;
-  font-size: 28px;
+  font-size: 35px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -317,6 +334,7 @@ h6 {
   overflow-y: auto;
   transition: 0.3s;
   border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1%;
 }
 
 .navbar-mobile li {
@@ -329,7 +347,7 @@ h6 {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  font-size: 16px;
+  font-size: 17px;
   position: relative;
 }
 
@@ -393,7 +411,7 @@ section .container {
 .section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -405,7 +423,7 @@ section .container {
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   color: #18d26e;
 }
 
@@ -630,14 +648,14 @@ section .container {
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   color: #fff;
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
+  padding: 0 0 10px 20px;
+  margin-top: -1px;
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
 }
