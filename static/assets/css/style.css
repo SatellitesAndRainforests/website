@@ -427,6 +427,10 @@ section .container {
   color: #18d26e;
 }
 
+#me-img {
+  border-radius: 1%;
+}
+
 .about-me .content ul {
   list-style: none;
   padding: 0;
